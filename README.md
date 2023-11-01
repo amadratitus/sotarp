@@ -26,14 +26,14 @@ import socket
 import random
 import os
 
-### Clear the screen (platform-specific command)
+# Clear the screen (platform-specific command)
 os.system('cls' if os.name == 'nt' else 'clear')
 # Server configuration
 server_ip = '127.0.0.1' 
-//server_port = 2718
-### random.seed(123)
+server_port = 2718
+# random.seed(123)
 
-#### Create a socket object
+# Create a socket object
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the server address and port
@@ -78,9 +78,11 @@ client_socket.close()
 server_socket.close()
 
 ```
+<br>
 <h4>
 reciever.py
 </h4>
+
 ```
 import socket
 import random
